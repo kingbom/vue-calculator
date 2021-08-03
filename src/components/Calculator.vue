@@ -38,10 +38,7 @@ export default {
       this.current = "";
     },
     sign() {
-      this.current =
-        this.current.charAt(0) === "-"
-          ? this.current.slice(1)
-          : `-${this.current}`;
+      this.current = this.current.charAt(0) === "-" ? this.current.slice(1) : `-${this.current}`;
     },
     percent() {
       this.current = `${parseFloat(this.current) / 100}`;
